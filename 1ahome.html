@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO TECH home</title>
+    <link rel="stylesheet" href="1ahome.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <a href="official logo.png">INFO TECH</a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/learning%20platform/learning%20platform.html">Learning Platform</a></li>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/information/info.html">Information</a></li>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/songs/music.html">Music</a></li>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/Graphic%20Studio/graphic%20studio.html">Graphic Studio</a></li>
+                <li><a href=" file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/fun/F&E.html">F&E</a></li>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/gallary/main%20gallary.html">Gallary</a></li>
+                <li><a href="file:///C:/Users/Dilushan%20Fernando/Documents/official%20web/other/about%20us.html">Other</a></li>
+               
+            </ul>
+            
+            
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+    <div class="about">
+        <div class="content">
+            <div class="title">INFO TECH</div>
+            <h3>World Information and technology to Knowledgeable  world </h3><br><br>
+            <p><h1>Info Tech</h1> <br><br><br>
+<h2>	Info Tech  is divided  into 2  groups(Parts)</h2>
+<p>1.	Graphic Studio <br>
+    2.	Info Lab<br></p>p1>
+
+
+<h2>Activity done by Info Tech</h2><br>
+I . Graphic Studio<br><br><br>
+	Photo & Video Editing<br>
+	Graphic Design<br><br>
+1.	 Logo Design<br>
+2.	Poster Design<br>
+3.	Wallpaper and Graphic Arts<br>
+	3d Design<br>
+	Web Design etc.<br><br><br>
+
+   2. 	Info Lab<br><br>
+   	World Information<br>
+   	World News <br>
+   	And special Massages etc.<br><br>
+   	Programming<br>
+   	Information About Technology<br>
+
+</p1>
+<img src="official logo.png"><img src="graphic studio.png">
+        </div>
+    </div>
+
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = () => {
+            navbar.classList.add("show");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabled");
+        }
+        cancelBtn.onclick = () => {
+            body.classList.remove("disabled");
+            navbar.classList.remove("show");
+            menuBtn.classList.remove("hide");
+        }
+        window.onscroll = () => {
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+</body>
+
+</html>
